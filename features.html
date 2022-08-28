@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Features</title>
+    <link rel="stylesheet" href="features.css">
+    <link rel="icon" href="https://cdn-icons-png.flaticon.com/128/2830/2830994.png">
+    <!-- font awesome cdn link  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <!-- <center><h2>Features</h2></center>  -->
+
+  <!-- header section starts  -->
+
+  <header class="header">
+
+    <a href="grocery.html" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+
+    <nav class="navbar">
+        <a href="grocery.html">home</a>
+        <a href="features.html">features</a>
+        <a href="products1.html">products</a>
+        <a href="#categories">categories</a>
+        <!-- <a href="#review">review</a> -->
+        <a href="contact1.html">Contact Us</a>
+    </nav>
+
+       
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <a href="cart4.html">
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    </a>
+        <a href="login.html">
+            <div class="fas fa-user" id="login-btn"></div>
+        </a>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="cart-img-1.png" alt="">
+            <div class="content">
+                <h3>watermelon</h3>
+                <span class="price">29.0/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>onion</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>chicken</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : $19.69/- </div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    
+
+</header>
+
+<!-- header section ends -->
+
+    <!-- <div class="wrapper"> -->
+    <div class="container">
+        <div class="box">
+            <h2>01</h2>
+            <h3>Fresh and Organic</h3>
+            <p>Do you need a fresh food? Then you are on right platform.Groco loves you a lot! Groco gives you a chance to live a healthy life with your family.It provides you fresh and organic fruits and vegetables,fresh diary products,meat.
+                Groco has a lot to serve you but it just needs your order to serve.Then what are you waiting for ... order your choices now!
+                </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2>02</h2>
+            <h3>Fast and Free Delivery</h3>
+            <p>want free delivery food ? Don't want to wait for a long time to have fresh food ? want fast delivery ? Then you are at correct place to get  fresh food at 
+                free delivery cost on your order .Your order will be placed within a short time.
+                </p>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="box">
+            <h2>03</h2>
+            <h3>Easy Payments</h3>
+            <p>Groco doesn't tense you a lot! You can pay for your order as cash-on-delivery or on any online payment.You are just a few clicks away to get your fresh food!
+                Order now and enjoy it... 
+                </p>
+        </div>
+    <!-- </div> -->
+</div>
+</body>
+
+<script>
+    let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let shoppingCart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () =>{
+    shoppingCart.classList.toggle('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let loginForm = document.querySelector('.login-form');
+
+document.querySelector('#login-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+}
+
+window.onscroll = () =>{
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+</script>
+</html>

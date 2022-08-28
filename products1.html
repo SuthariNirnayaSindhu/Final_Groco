@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+     <!-- font awesome cdn link  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <link rel="stylesheet" href="products1.css">
+</head>
+<body>
+    
+    
+    <!-- header section starts  -->
+
+<header class="header">
+
+    <a href="grocery.html" class="logo"> <i class="fas fa-shopping-basket"></i> groco </a>
+
+    <nav class="navbar">
+        <a href="grocery.html">home</a>
+        <a href="features.html">features</a>
+        <a href="products1.html">products</a>
+        <a href="#categories">categories</a>
+        <!-- <a href="#review">review</a> -->
+        <a href="contact1.html">Contact Us</a>
+    </nav>
+
+       
+
+    <!-- <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+        <a href="login.html">
+            <div class="fas fa-user" id="login-btn"></div>
+        </a>
+    </div> -->
+
+    <div class="icons">
+        <div class="fas fa-bars" id="menu-btn"></div>
+        <div class="fas fa-search" id="search-btn"></div>
+        <a href="cart4.html">
+        <div class="fas fa-shopping-cart" id="cart-btn"></div>
+    </a>
+        <a href="login.html">
+            <div class="fas fa-user" id="login-btn"></div>
+        </a>
+    </div>
+
+    <form action="" class="search-form">
+        <input type="search" id="search-box" placeholder="search here...">
+        <label for="search-box" class="fas fa-search"></label>
+    </form>
+
+    <div class="shopping-cart">
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="cart-img-1.png" alt="">
+            <div class="content">
+                <h3>watermelon</h3>
+                <span class="price">29.0/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-2.png" alt="">
+            <div class="content">
+                <h3>onion</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="box">
+            <i class="fas fa-trash"></i>
+            <img src="image/cart-img-3.png" alt="">
+            <div class="content">
+                <h3>chicken</h3>
+                <span class="price">$4.99/-</span>
+                <span class="quantity">qty : 1</span>
+            </div>
+        </div>
+        <div class="total"> total : $19.69/- </div>
+        <a href="#" class="btn">checkout</a>
+    </div>
+
+    <!-- <form action="" class="login-form">
+         <h3>login now</h3>
+        <input type="email" placeholder="your email" class="box">
+        <input type="password" placeholder="your password" class="box">
+        <p>forget your password <a href="#">click here</a></p>
+        <p>don't have an account <a href="#">create now</a></p> -->
+        <!-- <input type="submit" value="login now" class="btn"> -->
+     </form> 
+
+</header>
+
+<!-- header section ends -->
+
+
+<section class="categories" id="categories">
+
+    <h1 class="heading"> product <span>categories</span> </h1>
+
+    <div class="box-container">
+
+        <div class="box">
+            <img src="https://www.collinsdictionary.com/images/full/tomato_281240360.jpg" alt="">
+            <h3>Tomato</h3>
+            <p>₹15/kg</p>
+            <!-- <a href="#" class="btn">Buy Now</a> -->
+            <!-- <input type="number" value="1" class="cart-quantity"> -->
+            <button class="btn" onclick="addToCart(item2)">Add to Cart</button>
+        </div>
+
+        <div class="box">
+      <img src="https://www.jiomart.com/images/product/original/590002136/onion-5-kg-pack-product-images-o590002136-p590002136-0-202203141906.jpg" alt="">
+            <h3>Onion</h3>
+            <p>₹50/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.jiomart.com/images/product/original/590003533/green-chilli-200-g-product-images-o590003533-p590003533-0-202203150435.jpg" alt="">
+            <h3>Green Chilli</h3>
+            <p>₹25/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://5.imimg.com/data5/XN/FQ/MY-26989188/ladies-finger-500x500.jpg" alt="">
+            <h3>Okra</h3>
+            <p>₹35/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+    <!-- </div> -->
+
+    <!-- <div class="box-container"> -->
+
+        <div class="box">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ75ztRpxv_mq8YFPl0T0dvku4ExMJzcXliymzw4J8pJOdlWVs47FPBoKrzi9XakxHiXNA&usqp=CAU" alt="">
+            <h3>Brinjal</h3>
+            <p>₹40/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="box">
+      <img src="https://us.123rf.com/450wm/spamas/spamas1908/spamas190801343/128346918-green-pepper-full-depth-of-field-on-white-background.jpg?ver=6" alt="">
+            <h3>Capsicum</h3>
+            <p>₹15/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://i.pinimg.com/originals/57/34/b5/5734b5dc3ca8d1d95d36325d30fa9402.png" alt="">
+            <h3>Carrot</h3>
+            <p>₹25/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://webstockreview.net/images/cabbage-clipart-single-vegetable-1.jpg" alt="">
+            <h3>Broccoli</h3>
+            <p>₹35/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://thumbs.dreamstime.com/b/single-potato-7022351.jpg" alt="">
+            <h3>Potato</h3>
+            <p>₹40/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="box">
+      <img src="https://pngimg.com/uploads/beet/beet_PNG25.png" alt="">
+            <h3>Beetroot</h3>
+            <p>₹50/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://www.gardeningknowhow.com/wp-content/uploads/2020/03/primo-vantage-400x350.jpg" alt="">
+            <h3>Cabbage</h3>
+            <p>₹25/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+
+        <div class="box">
+            <img src="https://cdn.shopify.com/s/files/1/0047/9730/0847/products/nurserylive-seeds-bitter-gourd-summer-special-desi-vegetable-seeds-16968642887820.jpg?v=1634203001" alt="">
+            <h3>Bitter Gourd</h3>
+            <p>₹35/kg</p>
+            <a href="#" class="btn">Buy Now</a>
+        </div>
+    
+    
+        <ul class="pagination" style="width: 100000px;">
+            <li><a href="Products4.html">Previous</a></li>
+            <li><a class="active" href="products1.html">1</a></li>
+            <li><a href="Products2.html">2</a></li>
+            <li><a href="Products3.html">3</a></li>
+            <li><a href="Products4.html">4</a></li>
+            <li><a href="Products2.html">Next</a></li>
+            <!-- <li><a href="#">5</a></li> -->
+            <!-- <li><a href="#">6</a></li>
+            <li><a href="#">7</a></li>
+            <li><a href="#">?</a></li> -->
+          </ul>
+
+
+
+        </div>
+</section>
+
+
+</body>
+
+
+<script>
+     let searchForm = document.querySelector('.search-form');
+
+document.querySelector('#search-btn').onclick = () =>{
+    searchForm.classList.toggle('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let shoppingCart = document.querySelector('.shopping-cart');
+
+document.querySelector('#cart-btn').onclick = () =>{
+    shoppingCart.classList.toggle('active');
+    searchForm.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let loginForm = document.querySelector('.login-form');
+
+document.querySelector('#login-btn').onclick = () =>{
+    loginForm.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    navbar.classList.remove('active');
+}
+
+let navbar = document.querySelector('.navbar');
+
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+}
+
+window.onscroll = () =>{
+    searchForm.classList.remove('active');
+    shoppingCart.classList.remove('active');
+    loginForm.classList.remove('active');
+    navbar.classList.remove('active');
+}
+</script>
+</html>
